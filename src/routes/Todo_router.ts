@@ -5,7 +5,8 @@ class TodoRouter extends BaseRouter{
     public routes():void{
         this.router.get('/',TodoController.index);
         this.router.post('/',TodoController.create);
-        this.router.post('/',TodoController.update);
+       // this.router.get('/',TodoController.show);
+        this.router.put('/',TodoController.update);
         this.router.post('/',TodoController.delete);
        
     }
